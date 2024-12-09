@@ -1,0 +1,195 @@
+/*& Start Global Style */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background: rgb(153, 152, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 244, 228, 1) 0%,
+    rgba(222, 177, 97, 1) 30%,
+    rgba(153, 152, 80, 1) 100%
+  );
+
+  color: #151514;
+}
+
+.btn {
+  background-color: #d7f266;
+}
+/*& End Global Style */
+
+/*& Start Navbar Style */
+
+.my-nav .container {
+  width: 60%;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+.my-nav .container a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.my-nav .container a .icon {
+  padding-right: 10px;
+  color: #151514;
+}
+.my-nav .container a span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.my-nav .navbar-nav .nav-item {
+  padding-inline: 20px;
+}
+
+.my-nav .navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+.my-nav .navbar-nav .nav-item:hover .nav-link {
+  color: #151514;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+/*& End Navbar Style */
+
+/*& Start Home Body Style */
+.background {
+  min-height: fit-content;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../weather\ img.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background .current,
+.background .current .header,
+.background .current .condition,
+.week {
+  color: #fff;
+}
+.background .current .header,
+.background .current .condition,
+.week .header,
+.week .condition {
+  font-size: 20px;
+  font-weight: 500;
+}
+.background .container .search {
+  position: relative;
+}
+.background .container .search input {
+  width: 75%;
+  margin: auto;
+  padding: 15px 20px;
+  border: none;
+}
+.background .container .search input:focus {
+  box-shadow: none;
+}
+
+.background .container .search .find-btn {
+  position: absolute;
+  top: 7.5px;
+  right: 13%;
+  padding: 7px 25px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+.background .container .search .find-btn:hover {
+  background-color: #bcd558;
+}
+
+/*& End Home Body Style */
+
+/*& End Contact Body Style */
+
+.container .contact-info,
+.container .contact-info a {
+  color: #151514;
+}
+.container .contact-info p,
+.container .contact-info a {
+  padding-left: 7px;
+}
+.container .contact-title {
+  margin-bottom: 20px;
+}
+.container .contact-msg input,
+.container .contact-msg textarea {
+  border: none;
+  padding: 13px 20px;
+}
+.container .contact-msg input:focus {
+  box-shadow: none;
+}
+.container .contact-msg .contact-btn {
+  transition: background-color 0.3s ease-in-out;
+}
+.container .contact-msg .contact-btn:hover {
+  background-color: #bcd558;
+}
+/*& End Contact Body Style */
+
+/*& Start footer Style */
+
+footer .container {
+  width: 60%;
+}
+
+footer .container .subscribe {
+  position: relative;
+}
+footer .container .subscribe input {
+  border: none;
+  padding: 13px 20px;
+}
+footer .container .subscribe input:focus {
+  box-shadow: none;
+}
+footer .container .subscribe .subscribe-btn {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+footer .container .subscribe .subscribe-btn:hover {
+  background-color: #bcd558;
+}
+footer .container .social ul li {
+  padding: 10px 17px;
+  font-size: 20px;
+  background-color: #707c40;
+  border-radius: 50%;
+  margin-inline: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer .container .social ul li a {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+footer .container .social ul li:hover a {
+  color: aliceblue;
+}
+footer .container .social ul li:hover {
+  background-color: #4f572c;
+}
+
+footer .container .copy-right {
+  margin-top: 3rem;
+}
+/*& End footer Style */

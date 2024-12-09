@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/ico">
+    <!--& Font awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--& Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--& Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar my-nav navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="icon"><i class="fa-brands fa-cloudflare fa-2xl"></i></div>
+          <span>Weather</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-5">
+      <div class="background">
+        <div class="container p-5">
+          <form id="searchform" class="search">
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              id="findInput"
+              placeholder="Find your city"
+            />
+            <button id="searchBtn" class="btn find-btn rounded-pill">
+              Find
+            </button>
+          </form>
+        </div>
+        <div id="current" class="text-center current"></div>
+      </div>
+      <div class="container week my-4 pb-5">
+        <div id="rowData" class="row g-4 mt-5"></div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div
+        class="container d-flex flex-wrap justify-content-around align-items-center"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <form class="subscribe">
+              <input
+                type="text"
+                class="form-control rounded-pill"
+                id="searchInput"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="btn subscribe-btn rounded-pill">subscribe</button>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <div class="social">
+              <ul
+                class="d-flex flex-wrap justify-content-center align-items-center"
+              >
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 text-center copy-right">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--& Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--& Main JS  -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
